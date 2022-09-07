@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Marshal Nganunu Site Survey Form</h1>
+    <p id="description">This is a form to help understand the services Marshal offers.</p>
+    
+    <!-- beginning of form -->
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input type="text" id="name" name="name" placeholder="Name" required/></label>
+        <label for="email" id="email-label">Email <input required type="email" id="email" name="email" placeholder="Email"/></label>
+        <label for="number" id="number-label">Age <span>(optional)</span> <input type="number" id="number" name="age" min="13" max="120" placeholder="Age"/></label>
+        <label for="option">Which option best describes your current role? <select id="dropdown" name="dropdown">
+        <option value="1">Select Current Role</option>
+        <option value="2">Student</option>
+        <option value="3">Full Time Job</option>
+        <option value="4">Full Time Learner</option>
+        <option value="5">Prefer Not to Say</option>
+        <option value="6">Other</option>   
+        </select>
+        </label>
+        </fieldset>
+
+        <fieldset>
+        <label>Would you recommend Marshal's site to a friend?
+        </label>
+
+        <label for="name" ><input type="radio" id="name" class="inline" value="name" name="definetly">Definetly
+
+        <input type="radio" id="name" class="inline" value="name" name="definetly">Likely
+          <label>
+          <label for="name" class="inline"><input type="radio" id="second" class="inline" value="radio" name="maybe">Maybe
+
+          <input type="radio" id="second" class="inline" value="radio" name="maybe">Unlikely
+          <label> 
+          <label for="name" class="inline"><input type="radio" id="third" class="inline" value="radio" name="not-sure">Not Sure
+
+          <input type="radio" id="third" class="inline" value="radio" name="not-sure">Very sure
+          <label>
+            </fieldset>
+            <fieldset>
+
+        <label>What is your favorite feature of Marshal's site?
+          <select id="dropdown" name="dropdown">
+        <option value="1">Select Option</option>
+        <option value="2">Challenges</option>
+        <option value="3">Projects</option>
+        <option value="4">Community</option>
+        <option value="5">Open Source</option>   
+        </select>
+        </label>
+
+        
+
+        <label>What would you like to see improved? <span>(Check all that apply)</span></label>
+        <label for="feature" name="feature">
+          <input id="feature" type="checkbox" required name="feature" class="inline" value="front-end-projects"/> Front-end Projects
+        </label>
+        <label for="feature" name="feature">
+          <input id="feature" type="checkbox" required name="feature" class="inline" value="back-end-projects" /> Back-end Projects
+        </label>
+        <label for="feature" name="feature">
+          <input id="feature" type="checkbox" required name="feature" class="inline" value="data-visualization"/> Data Visualization
+        </label>
+        <label for="feature" name="feature">
+          <input id="feature" type="checkbox" required name="feature" class="inline" value="open-source-community" /> Open Source Community
+        </label>
+        <label for="feature" name="feature">
+          <input id="feature" type="checkbox" required name="feature" class="inline" value="wiki" /> Wiki
+        </label>
+        <label>Any comments or suggestions? <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit"type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
